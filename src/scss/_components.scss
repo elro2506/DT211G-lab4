@@ -36,6 +36,3 @@ footer {
     @include photo(200px, false);
 }
 
-a:visited {
-        color: variables.$text-primary-color;
-    }
