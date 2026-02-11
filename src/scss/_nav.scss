@@ -3,20 +3,20 @@
 header {
     background-color: variables.$background-first-color;
     width: 100%;
-    position: sticky;
+
     top: 0;
     z-index: 1000;
 }
 
 .header-inner {
-  width: 100%;
+    width: 100%;
 }
 
 .navbar {
-   display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 0 50px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 30px;
 }
 
 .site-logo {
@@ -31,17 +31,21 @@ header {
     padding: 0;
     margin: 0;
 
+    li:not(:last-child) {
+        border-right: 1px solid variables.$text-primary-color;
+    }
 
- li a {
-    color: variables.$text-primary-color;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    letter-spacing: 0.1rem;
-    padding: 5px;
- }
+    li a {
+        color: variables.$text-primary-color;
+        text-decoration: none;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 25px;
+
+    }
+
     .active {
         color: variables.$text-primary-color;
         font-weight: bold;
@@ -50,28 +54,32 @@ header {
 
     :hover {
         color: variables.$hover-light;
- }
-
-
-
+    }
 
     a {
         text-decoration: none;
         color: variables.$text-primary-color;
     }
 
- 
+    
+    .nav-links li &:not(:last-child) {
+                border-right: 1px solid variables.$text-primary-color;
+            
+    }
+}
 
-  }
 
-
-  .nav-links img {
+.nav-links img {
     display: block;
     height: 80px;
     width: auto;
 }
+
 .hamburger {
     display: none;
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
 }
 
 
@@ -92,17 +100,22 @@ header {
         flex-direction: column;
         width: 100%;
 
-    li {
-        width: 100%;
-        text-align: center;
+        li {
+            width: 100%;
+            text-align: center;
 
-        a {
-            justify-content: center;
-    
+            &:not(:last-child) {
+                border-bottom: 1px solid variables.$text-primary-color;
+            }
+
+            a {
+                justify-content: center;
+
+            }
         }
     }
-    }
-     .nav-links.active {
+
+    .nav-links.active {
         display: flex;
 
     }

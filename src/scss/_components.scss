@@ -1,7 +1,6 @@
 @use "variables";
 
 .puff {
-    
     background-color: variables.$box-background-light;
     color: variables.$box-text-light;
     border-radius: 10px;
@@ -58,9 +57,9 @@ footer {
     @include photo(200px, false);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) { //Valde 900 eftersom det blev ett mellanläge mellan mobil enhet och datorskärm, blev snyggast såhär
     .flex-box {
-        flex-direction: column;
+        flex-direction: column; //Radas upp vertikalt
         gap: 10px;
     }
 

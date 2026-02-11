@@ -20,10 +20,10 @@
           aria-expanded="false">☰</button>
         <ul class="nav-links" id="navLinks">
           <li>
-            <a href="index.html" class="active">Start</a>
+            <a href="index.html">Start</a>
           </li>
           <li>
-            <a href="SASS.html">SASS</a>
+            <a href="SASS.html" class="active">SASS</a>
           </li>
           <li>
             <a href="#meny3">Meny 3</a>
@@ -50,13 +50,16 @@
       <p>Genom att skapa denna hemsida har jag övat på olika tekniker och testat mig fram till olika lösningar. Därför
         kan det upplevas som att
         det inte finns en genomgående röd tråd på innehållet, då jag fokuserat mer på att lära mig olika funktioner som
-        SCSS och SASS erbjuder.
+        SCSS och SASS erbjuder. Jag har provat mig fram med hjälp av föreläsningar, litteratur och sidor på internet för
+        att utforska
+        funktioner och implementera dessa.
       </p>
       <p>Det finns många saker man kan göra med hjälp av SASS och SCSS. Jag har använt mig av filer med filändelse
         .scss.
         Jag har exempelvis valt att använda if- och else-satser för bilder, där jag har två olika klasser med olika
         värden. Jag har valt
-        att göra en klass som rund och den andra som fyrkant, med ytterst lite border-radius för rundade hörn.</p>
+        att göra en klass som rund och den andra som fyrkant, med ytterst lite border-radius för rundade hörn. Se nedan
+        bilder.</p>
       <div class="arstider">
         <div class="bild-span">
           <picture>
@@ -73,7 +76,8 @@
           <span>VINTER</span>
         </div>
       </div>
-      <p>Vidare har jag använt mig av flera funktioner. Jag har använt variabler, där jag främst lagrat färger i
+      <h3>Funktioner</h3>
+      <p>Jag har använt variabler, där jag främst lagrat färger i
         variabler som kan återanvändas
         i hela koden, så att man dels slipper skriva ut färgkoden hela tiden, men även underlättar det för mig genom att
         kunna vara säker på att
@@ -87,10 +91,15 @@
       <p>Jag har använt mig av @mixin på bilderna nedan, där jag skapar en huvudkod för bilderna och sedan valt att ha
         två olika former
         på bilderna och dessa har bestämts med hjälp av @mixin. Jag har även kombinerat detta med if och else.</p>
-      <p>@extend</p>
+      <p>Jag använde @extend för att testa olika bakgrundsfärger på knapparna på startsidan. I övrigt har knapparna
+        ingen funktion utan
+        dessa finns endast för att testa @extend. I detta fall har vissa knappar en grundfärg medan övriga knappar fått
+        en annan bakgrundsfärg.
+      </p>
       <p>För de som använder mörkt läge på sin skärm har jag aktiverat dark mode med hjälp av "@media
         (prefers-color-scheme: dark)". Jag har
-        manuellt lagt in färger i variabler och testat mig fram vilka kontraster som kan passa bra i mörkt läge.</p>
+        manuellt lagt in färger i variabler och testat mig fram vilka kontraster som kan passa bra i mörkt läge. Det är främst färgerna
+      vitt, svart och grått som använts för mörkt läge.</p>
 
 
 
@@ -111,6 +120,7 @@
       <p>Det är även, nu i början, inte alltid lätt att veta i vilken partial man bör lägga vilken kod. Detta är dock
         något jag
         tänker klarnar upp mer när man får över mer och mer på detta.</p>
+<p>Att testa på dessa funktioner har varit roligt och givande och jag ser fram emot kommande projekt för att använda kunskaperna på fler sätt.</p>
     </section>
   </main>
   <footer>
