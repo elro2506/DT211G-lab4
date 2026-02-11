@@ -15,7 +15,29 @@ footer {
     padding: 0.2rem 1rem 1rem 1rem;
 }
 
+.flex-box {
+  display: flex;
+  width: 100%;
+ margin-top: 20px;
+ margin-bottom: 30px;
+}
 
+.btn {
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.btn-sass {
+    @extend .btn;
+    background-color: red;
+}
+
+.btn-meny {
+    @extend .btn;
+    background-color: green;
+}
 
 @mixin photo($size, $circle) {
     width: $size;
@@ -35,4 +57,6 @@ footer {
 .photo-square {
     @include photo(200px, false);
 }
+
+
 
