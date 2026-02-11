@@ -1,38 +1,47 @@
 @use "variables";
 
-.site-header {
-    background-color: variables.$text-third-color;
+header {
+    background-color: variables.$background-first-color;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.meny {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem 2rem;
+.header-inner {
+  width: 100%;
 }
 
-.header-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+.navbar {
+   display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 50px 0 30px;
 }
 
-.logo img {
+.site-logo {
     display: block;
-    height: 80px;
-    width: auto;
+    padding: 20px 0;
 }
 
-.main-nav {
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+
+
+ li a {
     color: variables.$text-primary-color;
     text-decoration: none;
     font-size: 2rem;
-
-    a {
-        text-decoration: none;
-        color: variables.$text-primary-color;
-    }
-
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 0.1rem;
+    padding: 5px;
+ }
     .active {
         color: variables.$text-primary-color;
         font-weight: bold;
@@ -40,11 +49,62 @@
     }
 
     :hover {
-        color: rgb(75, 75, 75);
+        color: variables.$hover-light;
+ }
+
+
+
+
+    a {
+        text-decoration: none;
+        color: variables.$text-primary-color;
     }
+
+ 
 
   }
 
-.menu-toggle {
+
+  .nav-links img {
+    display: block;
+    height: 80px;
+    width: auto;
+}
+.hamburger {
     display: none;
+}
+
+
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navbar {
+        flex-wrap: wrap; //Så att menyn kan hamna på en ny rad
+        padding-right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+
+    li {
+        width: 100%;
+        text-align: center;
+
+        a {
+            justify-content: center;
+    
+        }
+    }
+    }
+     .nav-links.active {
+        display: flex;
+
+    }
+
 }

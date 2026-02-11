@@ -11,7 +11,7 @@
 }
 
 footer {
-    background-color: variables.$text-third-color;
+    background-color: variables.$background-first-color;
     padding: 0.2rem 1rem 1rem 1rem;
 }
 
@@ -23,20 +23,20 @@ footer {
 }
 
 .btn {
-  background-color: #f1f1f1;
+  background-color: variables.$button-background-primary-light;
   margin: 0 auto;
   padding: 20px;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 .btn-sass {
     @extend .btn;
-    background-color: red;
+    background-color: variables.$button-background-primary-light;
 }
 
 .btn-meny {
     @extend .btn;
-    background-color: green;
+    background-color: variables.$button-background-secondary-light;
 }
 
 @mixin photo($size, $circle) {
@@ -58,5 +58,17 @@ footer {
     @include photo(200px, false);
 }
 
+@media (max-width: 900px) {
+    .flex-box {
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .btn {
+        font-size: 1.5rem;
+        padding: 10px;
+        width: 100%;
+        max-width: 600px;
+    }
+}
 

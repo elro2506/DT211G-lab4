@@ -4,29 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/src/scss/main.scss">
+  <link rel="stylesheet" href="./src/scss/main.scss">
   <title>Laboration 3</title>
-  <link rel="icon" type="image/x-icon" href="/bilder/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="./bilder/favicon.svg">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="meny">
-      <div class="header-row">
-        <a href="index.html" class="logo">
-          <img src="/bilder/logotyp.svg" alt="Logotyp">
+  <header>
+    <div class="header-inner">
+      <nav class="navbar">
+        <a aria-label="Gå till startsidan" class="site-logo" href="index.html" title="Startsidan">
+          <img alt="Min startsida" src="/bilder/logotyp.svg" width="250">
         </a>
-        <button class="menu-toggle" type="button" onclick="myFunction()" aria-label="Öppna meny">
-          ☰
-        </button>
-        <nav class="main-nav" id="myLinks">
-          <a href="index.html">Start</a> |
-          <a href="SASS.html" class="active">SASS</a> |
-          <a href="#Meny3">Meny3</a> |
-          <a href="#Meny4">Meny4</a> |
-          <a href="#Meny5">Meny5</a>
-        </nav>
-      </div>
+        <button class="hamburger" id="hamburger" aria-label="Öppna navigation" aria-controls="navLinks"
+          aria-expanded="false">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="index.html" class="active">Start</a>
+          </li>
+          <li>
+            <a href="SASS.html">SASS</a>
+          </li>
+          <li>
+            <a href="#meny3">Meny 3</a>
+          </li>
+          <li>
+            <a href="#meny4">Meny 4</a>
+          </li>
+          <li>
+            <a href="#meny5">Meny 5</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main>
@@ -38,6 +47,11 @@
       </p>
 
       <h2>Min implementering och användning av SASS och SCSS</h2>
+      <p>Genom att skapa denna hemsida har jag övat på olika tekniker och testat mig fram till olika lösningar. Därför
+        kan det upplevas som att
+        det inte finns en genomgående röd tråd på innehållet, då jag fokuserat mer på att lära mig olika funktioner som
+        SCSS och SASS erbjuder.
+      </p>
       <p>Det finns många saker man kan göra med hjälp av SASS och SCSS. Jag har använt mig av filer med filändelse
         .scss.
         Jag har exempelvis valt att använda if- och else-satser för bilder, där jag har två olika klasser med olika
@@ -65,8 +79,10 @@
         kunna vara säker på att
         samma färger används och det inte finns någon skillnad i nyans och liknande.
       </p>
-      <p>Med hjälp av nesting har jag kunnat underlätta kodningen och nästlat ihop kod för att minska upprepningar. Detta har exempelvis
-        använt för länkar i navigationen, där jag haft nästlad kod för när länkar är aktiva och vid hover och utgått från navigationens kod.
+      <p>Med hjälp av nesting har jag kunnat underlätta kodningen och nästlat ihop kod för att minska upprepningar.
+        Detta har exempelvis
+        använt för länkar i navigationen, där jag haft nästlad kod för när länkar är aktiva och vid hover och utgått
+        från navigationens kod.
       </p>
       <p>Jag har använt mig av @mixin på bilderna nedan, där jag skapar en huvudkod för bilderna och sedan valt att ha
         två olika former

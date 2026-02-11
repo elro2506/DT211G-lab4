@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
      display: flex;
     flex-direction: column;
+    font-size: 1rem;
 }
 
 main {
@@ -54,13 +55,15 @@ nav a:visited {
         color: variables.$box-text-dark;
         border: 1px solid variables.$box-border-dark;
     }
+
     
-    .site-header, footer {
+    .navbar, footer {
         background-color: variables.$text-secondary-color;
     }
 
     .arstider {
         background-color: variables.$puff-background-dark;
+        border: 1px solid variables.$box-border-dark;
     }
 
     nav a:visited {
@@ -71,6 +74,22 @@ nav a:visited {
     a:visited {
         color: variables.$text-secondary-color;
     }
+.btn, .btn-sass {
+    background-color: variables.$button-background-primary-dark;
+    color: variables.$text-secondary-color;
+    border: 1px solid white;
+}
+  
+
+.btn-meny {
+    background-color: variables.$button-background-secondary-dark;
+    color: variables.$text-secondary-color;
+    border: 1px solid white;
+}
+
+.nav-links li a:hover {
+    color: variables.$hover-dark;
+}
 
 }
 
@@ -97,3 +116,15 @@ nav a:visited {
   display: block;
 }
 
+@media (max-width: 600px) {
+    
+    .arstider {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .container {
+        margin: 10px auto;
+        padding: 0.8rem;
+    }
+}
