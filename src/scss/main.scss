@@ -7,6 +7,7 @@ html,
 body {
     height: 100%;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 body {
@@ -85,11 +86,14 @@ nav a:visited {
     .bananer {
     display: grid;
   grid-template-columns: repeat(3, 1fr);
+ }
 
-}
+
 
     .banan-light {
+        width: 100%;
         max-width: 400px;
+        height: auto;
         display: block;
         cursor: pointer;
     }
@@ -99,7 +103,11 @@ nav a:visited {
         display: none;
     }
 
-
+.banan-text {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
 
 
 @media (prefers-color-scheme: dark) { //Mörkt läge
@@ -193,14 +201,24 @@ nav a:visited {
 
 @media (max-width: 600px) {
     
-    .arstider, .tomater, .bananer {
+    .arstider, .tomater{
         grid-template-columns: 1fr;
         padding: 1rem;
     }
+
+    .bananer, .element-tester  {
+        grid-template-columns: 1fr;
+        margin: 10px auto;
+        width: 100%;
+        justify-self: center;
+    }
+
+  
 
     .container {
         max-width: 100%;
         margin: 20px auto;
         padding: 0.8rem;
+        overflow-x: hidden;
     }
 }
