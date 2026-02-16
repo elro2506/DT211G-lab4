@@ -39,13 +39,13 @@ background-color: variables.$puff-background-light;
 border-radius: 20px;
 padding: 2rem;
 }
+
 .tomater {
     display: grid; //Vill ha tre bilder bredvid varandra
   grid-template-columns: repeat(3, 1fr);
 overflow: visible;
 border-radius: 20px;
 padding: 1rem;
-
 position: relative;
 }
 
@@ -55,6 +55,21 @@ nav a:visited {
 
     .smiley img {
         width: 100px;
+    }
+
+    .bananer {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+    .banan-light {
+        width: 400px;
+        display: block;
+    }
+
+    .banan-dark {
+        @extend .banan-light;
+        display: none;
     }
 
 @media (prefers-color-scheme: dark) { //Mörkt läge
@@ -109,6 +124,14 @@ nav a:visited {
     color: variables.$hover-dark;
 }
 
+.banan-light {
+    display: none;
+}
+
+.banan-dark {
+    display: block;
+}
+
 }
 
 
@@ -137,7 +160,7 @@ nav a:visited {
 
 @media (max-width: 600px) {
     
-    .arstider, .tomater {
+    .arstider, .tomater, .bananer {
         grid-template-columns: 1fr;
         padding: 1rem;
     }
