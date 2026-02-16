@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/scss/main.scss">
-    <title>Laboration 3</title>
+    <title>Laboration 4</title>
     <link rel="icon" type="image/svg+xml" href="./bilder/favicon.svg">
 </head>
 
@@ -26,7 +26,7 @@
                         <a href="SASS.html">SASS</a>
                     </li>
                     <li>
-                        <a href="#meny3" class="active">Meny 3</a>
+                        <a href="animations.html" class="active">Animeringar</a>
                     </li>
                     <li>
                         <a href="#meny4">Meny 4</a>
@@ -38,15 +38,25 @@
             </nav>
         </div>
     </header>
-    <script type="module" src="./src/main.js"></script>
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
+    <main>
+        <div class="smiley">
+            <img src="/bilder/smiley.svg">
+        </div>
+    </main>
+   <footer>
+    <h3>DT211G</h3>
+    <p>Laboration 3</p>
+    <p>Elin Ronda, 2026</p>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>

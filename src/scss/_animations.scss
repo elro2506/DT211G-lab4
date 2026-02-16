@@ -1,0 +1,11 @@
+
+.smiley img{
+    width: 100px;
+    height: 100px;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.smiley img:hover {
+    width: 300px;
+}
