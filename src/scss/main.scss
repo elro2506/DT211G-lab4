@@ -44,6 +44,9 @@ nav a:visited {
         color: variables.$text-primary-color;
     }
 
+    .smiley img {
+        width: 100px;
+    }
 
 @media (prefers-color-scheme: dark) { //Mörkt läge
     main {
