@@ -39,6 +39,15 @@ background-color: variables.$puff-background-light;
 border-radius: 20px;
 padding: 2rem;
 }
+.tomater {
+    display: grid; //Vill ha tre bilder bredvid varandra
+  grid-template-columns: repeat(3, 1fr);
+overflow: visible;
+border-radius: 20px;
+padding: 1rem;
+
+position: relative;
+}
 
 nav a:visited {
         color: variables.$text-primary-color;
@@ -63,6 +72,10 @@ nav a:visited {
     
     .navbar, footer {
         background-color: variables.$text-secondary-color;
+    }
+
+    .smiley img {
+        background-color: variables.$box-background-dark;
     }
 
     .arstider {
@@ -99,17 +112,17 @@ nav a:visited {
 }
 
 
-.bild-span { //För att texten hamnar under bilden
+.bild-span, .bild-tomat { //För att texten hamnar under bilden
   display: flex;
  flex-direction: column;
  align-items: center;
-  overflow: hidden;
   border-radius: 20px;
+  z-index: 0; //så att bilderna kan flyta ovanpå vid animering
 }
 
 
 
-.bild-span span {
+.bild-span span, .bild-tomat span {
   display: block;
   text-align: center;
   font-size: 2rem;
@@ -117,13 +130,14 @@ nav a:visited {
   width: 100%;
 }
 
-.bild-span img {
+.bild-span img, .bild-tomat img {
   display: block;
+    z-index: 2;
 }
 
 @media (max-width: 600px) {
     
-    .arstider {
+    .arstider, .tomater {
         grid-template-columns: 1fr;
         padding: 1rem;
     }

@@ -3,8 +3,20 @@
     animation: rotate 5s infinite;
 }
 
+.bild-tomat img {
+    position: relative;
+    animation: move 5s ease;
+}
+
 
 @keyframes rotate {
     50% {transform: rotate(360deg); 
     }
+}
+
+
+@keyframes move {
+  0%   {left:-200px; bottom:0px;}
+   50%  {left:0px; bottom:100px;}
+  100% {left:0px; bottom:0px;}
 }
