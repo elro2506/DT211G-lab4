@@ -1,4 +1,3 @@
-
 @use "variables";
 
 
@@ -16,18 +15,20 @@ footer {
     padding: 0.2rem 1rem 1rem 1rem;
 }
 
-.flex-box { //Där de 5 knapparna finns, för att testa @extend
-  display: flex;
-  width: 100%;
- margin-top: 20px;
- margin-bottom: 30px;
+.flex-box {
+    //Där de 5 knapparna finns, för att testa @extend
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .btn {
-  background-color: variables.$button-background-primary-light;
-  margin: 0 auto;
-  padding: 20px;
-  font-size: 2rem;
+    background-color: variables.$button-background-primary-light;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 2rem;
+    border: 2px solid variables.$text-primary-color;
 }
 
 .btn-sass {
@@ -40,13 +41,47 @@ footer {
     background-color: variables.$button-background-secondary-light;
 }
 
+.click-btn {
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    position: relative;
+    background-color: variables.$background-first-color;
+    border: none;
+    color: variables.$text-primary-color;
+    max-width: 200px;
+    max-height: 100px;
+    text-align: center;
+    transition-duration: 1s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px variables.$box-border-light;
+    border-radius: 10px;
+}
+
+
+
+.click-btn:active {
+    content: "";
+    background: variables.$button-background-secondary-dark;
+    color: variables.$text-secondary-color;
+    display: block;
+    transition-duration: all 0.3s;
+}
+
+hr {
+    height: 5px;
+    border: none;
+}
+
 @mixin photo($size, $circle) {
     width: $size;
     height: $size;
 
     @if $circle {
         border-radius: 50%;
-    } @else {
+    }
+
+    @else {
         border-radius: 10px;
     }
 }
@@ -59,7 +94,9 @@ footer {
     @include photo(200px, false);
 }
 
-@media (max-width: 900px) { //Valde 900 eftersom det blev ett mellanläge mellan mobil enhet och datorskärm, blev snyggast såhär
+@media (max-width: 900px) {
+
+    //Valde 900 eftersom det blev ett mellanläge mellan mobil enhet och datorskärm, blev snyggast såhär
     .flex-box {
         flex-direction: column; //Radas upp vertikalt
         gap: 10px;
@@ -72,4 +109,3 @@ footer {
         max-width: 600px;
     }
 }
-

@@ -49,6 +49,15 @@ padding: 1rem;
 position: relative;
 }
 
+.element-tester {
+    display: grid; //Vill ha fem element bredvid varandra
+  grid-template-columns: repeat(5, 1fr);
+overflow: visible;
+border-radius: 20px;
+padding: 1rem;
+position: relative;
+}
+
 nav a:visited {
         color: variables.$text-primary-color;
     }
@@ -57,20 +66,41 @@ nav a:visited {
         width: 100px;
     }
 
+    .smiley-dark img {
+        display: none;
+        width: 100px;
+    }
+
+    .pil-upp img {
+        height: 100px;
+        position: relative;
+                animation: pilupp 5s infinite;
+    }
+    .pil-ner img {
+        height: 100px;
+        position: relative;
+        animation: pilner 5s infinite;
+    }
+
     .bananer {
     display: grid;
   grid-template-columns: repeat(3, 1fr);
+
 }
 
     .banan-light {
-        width: 400px;
+        max-width: 400px;
         display: block;
+        cursor: pointer;
     }
 
     .banan-dark {
         @extend .banan-light;
         display: none;
     }
+
+
+
 
 @media (prefers-color-scheme: dark) { //Mörkt läge
     main {
@@ -90,9 +120,12 @@ nav a:visited {
     }
 
     .smiley img {
-        background-color: variables.$box-background-dark;
+        display: none;
     }
 
+    .smiley-dark img {
+        display: block;
+    }
     .arstider {
         background-color: variables.$puff-background-dark;
         border: 1px solid variables.$box-border-dark;
@@ -166,7 +199,8 @@ nav a:visited {
     }
 
     .container {
-        margin: 10px auto;
+        max-width: 100%;
+        margin: 20px auto;
         padding: 0.8rem;
     }
 }
