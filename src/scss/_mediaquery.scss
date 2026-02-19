@@ -1,12 +1,18 @@
 @media (max-width: 600px) {
 
-    .arstider,
-    .tomater {
+     .arstider{
         grid-template-columns: 1fr;
         flex-direction: column;
         padding: 1rem;
         overflow-x: hidden;
     }
+
+.tomater {
+   grid-template-columns: 1fr;
+        flex-direction: column;
+        padding: 1rem;
+        overflow-x: hidden;
+}
 
     .bananer,
     .element-tester {
@@ -17,8 +23,7 @@
         overflow: hidden;
     }
 
-
-
+    
     .container {
         max-width: 100%;
         margin: 20px auto;
@@ -38,13 +43,16 @@
 
 @media (max-width: 900px) {
 
-    .arstider,
-    .tomater {
+    .arstider{
         grid-template-columns: 1fr;
         flex-direction: column;
         padding: 1rem;
         overflow-x: hidden;
     }
+.tomater {
+    @extend .arstider;
+        overflow: hidden;
+}
 
     .bananer,
     .element-tester {

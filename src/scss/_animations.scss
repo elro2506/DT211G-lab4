@@ -26,18 +26,18 @@
 
 @keyframes move {
     0% {
-        left: -200px;
-        bottom: 100px;
+        left: -100px;
+        bottom: 50px;
     }
 
     25% {
-        left: 200px;
-        bottom: 100px;
+        left: 100px;
+        bottom: 50px;
     }
 
     50% {
         left: 0px;
-        bottom: 100px;
+        bottom: 50px;
     }
 
     75% {
@@ -46,10 +46,12 @@
     }
 
     100% {
-        left: -200px;
-        bottom: 100px;
+        left: -100px;
+        bottom: 50px;
     }
 }
+
+
 
 @keyframes moveshadow {
     0% {
