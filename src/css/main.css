@@ -58,7 +58,7 @@ main {
 .bild-tomat img {
   display: block;
   z-index: 200;
-  padding-top: 40px;
+  margin-top: 60px;
 }
 
 .tomater {
@@ -516,7 +516,7 @@ nav a:visited {
     grid-template-columns: 1fr;
     flex-direction: column;
     padding: 1rem;
-    margin-top: 20px;
+    margin-top: 80px;
     overflow-x: hidden;
   }
   .bild-tomat img {
