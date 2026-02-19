@@ -14,7 +14,7 @@
 
 .bild-tomat img {
     position: relative;
-    animation: move 5s ease, moveshadow 5s ease;
+    animation: move 5s infinite, moveshadow 5s ease infinite;
 }
 
 .banan-light {
@@ -28,7 +28,8 @@
 .pil-upp{
     height: 100px;
     position: relative;
-    animation: pilupp 5s infinite, rotate2 5s linear infinite;
+    animation: pilupp 5s infinite;
+    margin-bottom: 40px;
 }
 
 .pil-ner{

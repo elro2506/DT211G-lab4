@@ -4,7 +4,9 @@
     .arstider,
     .tomater {
         grid-template-columns: 1fr;
+        flex-direction: column;
         padding: 1rem;
+        overflow-x: hidden;
     }
 
     .bananer,
@@ -13,6 +15,47 @@
         margin: 10px auto;
         width: 100%;
         justify-self: center;
+        overflow: hidden;
+    }
+
+
+
+    .container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0.8rem;
+        overflow-x: hidden;
+    }
+
+    .click-btn:active {
+     transform: scale(0.6);
+       }
+
+       .pil-ner {
+        animation: pilupp 5s infinite;
+        padding-bottom: 50px;
+       }
+}
+
+@media (max-width: 900px) {
+
+    .arstider,
+    .tomater {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+
+    .bananer,
+    .element-tester {
+        grid-template-columns: 1fr;
+        margin: 10px auto;
+        width: 100%;
+        justify-self: center;
+        overflow: hidden;
+        height: 100%;
+        position: relative;
     }
 
 
@@ -24,3 +67,5 @@
         overflow-x: hidden;
     }
 }
+
+
