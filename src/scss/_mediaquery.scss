@@ -1,4 +1,3 @@
-
 @media (max-width: 600px) {
 
     .arstider,
@@ -28,13 +27,13 @@
     }
 
     .click-btn:active {
-     transform: scale(0.6);
-       }
+        transform: scale(0.6);
+    }
 
-       .pil-ner {
+    .pil-ner {
         animation: pilupp 5s infinite;
         padding-bottom: 50px;
-       }
+    }
 }
 
 @media (max-width: 900px) {
@@ -67,5 +66,3 @@
         overflow-x: hidden;
     }
 }
-
-

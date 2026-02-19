@@ -144,12 +144,11 @@ footer {
 
 
 .click-btn:active {
-    content: "";
     background: variables.$button-background-secondary-dark;
     color: variables.$text-secondary-color;
     display: block;
-    transform: scale(0.8);
-       }
+    transform: scale(0.8); //Lite mindre vid klick
+}
 
 hr {
     height: 5px;

@@ -7,7 +7,9 @@
     }
 }
 
-@keyframes rotate2 { //För pilarna
+@keyframes rotate2 {
+
+    //För pilarna
     0% {
         transform: rotate(0deg);
     }
@@ -66,6 +68,8 @@
 }
 
 @keyframes flip {
+
+    //Spegelvändning av bananen
     0% {
         transform: rotateY(0deg);
     }
@@ -80,6 +84,8 @@
 }
 
 @keyframes color {
+
+    //Främst för HR-linjen
     0% {
         background-color: black;
     }
@@ -138,8 +144,7 @@
 
     100% {
 
-       transform: translateY(0);
+        transform: translateY(0);
     }
 
- }
-
+}

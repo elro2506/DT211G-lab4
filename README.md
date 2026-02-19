@@ -10,9 +10,13 @@ Min webbplats nås på https://elro2506.github.io/DT211G-lab4/
 - Vite
 - Animationer
 
-### Uppgiften
-Med hjälp av Vite och preprocessorn SASS (SCSS) har jag skapat denna webbplats för att testa olika typer av funktioner som SCSS erbjuder. Jag har även
-använt mig av animationer för att lägga till rörelse på olika element vid hover, klick eller automatiskt.
+### Animationer
+Denna uppgift har handlat om att prova sig fram med olika animationer. Jag har använt mig av:
+- @keyframes för rörelse, rotation och färgändringar
+- transform för rotation, skalning och förflyttning av element
+- transition för mjuk animering när man klickar på en knapp
+
+Animationerna triggas igång vid hover, klick eller när sidan laddas. Mina koder är uppdelade i olika partials och skrivna i SCSS.
 
 ### Klona projektet
 För att klona mitt projekt kan du skriva detta i terminalen:

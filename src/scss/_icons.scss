@@ -25,14 +25,14 @@
     animation: none;
 }
 
-.pil-upp{
+.pil-upp {
     height: 100px;
     position: relative;
     animation: pilupp 5s infinite;
     margin-bottom: 40px;
 }
 
-.pil-ner{
+.pil-ner {
     height: 100px;
     z-index: 20; //Så den hamnar ovanpå tomatbilden
     position: relative;
