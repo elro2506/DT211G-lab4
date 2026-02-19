@@ -1,0 +1,26 @@
+
+@media (max-width: 600px) {
+
+    .arstider,
+    .tomater {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .bananer,
+    .element-tester {
+        grid-template-columns: 1fr;
+        margin: 10px auto;
+        width: 100%;
+        justify-self: center;
+    }
+
+
+
+    .container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0.8rem;
+        overflow-x: hidden;
+    }
+}

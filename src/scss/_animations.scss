@@ -1,24 +1,23 @@
-.smiley img:hover,
-.smiley-dark img:hover {
-    animation: rotate 5s infinite;
-}
+@use "variables";
 
-.bild-tomat img {
-    position: relative;
-    animation: move 5s ease;
-}
-
-.banan-light {
-    animation: flip 3s infinite;
-}
-
-hr {
-    animation: color 10s infinite;
-}
 
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
     }
 }
 
@@ -28,21 +27,33 @@ hr {
         left: -200px;
         bottom: 100px;
     }
-
     25% {
         left: 200px;
         bottom: 100px;
     }
-
     50% {
         left: 0px;
         bottom: 100px;
     }
-
     100% {
         left: 0px;
         bottom: 0px;
     }
+}
+
+@keyframes moveshadow {
+    0% {
+filter: drop-shadow(-14px 0 15px variables.$puff-background-dark); //Blur från vänster
+    }
+
+ 
+50% {
+filter: drop-shadow(14px 0 15px variables.$puff-background-dark); //Blur från höger
+}
+100% {
+filter: drop-shadow(0 -15px 15px variables.$puff-background-dark); //Blur uppifrån
+}
+
 }
 
 @keyframes flip {
@@ -110,12 +121,12 @@ hr {
 
     25% {
        
-        bottom: 100px;
+        bottom: 25px;
     }
 
     50% {
    
-        bottom: 150px;
+        bottom: 50px;
     }
     100% {
         bottom: 0px;
@@ -129,12 +140,12 @@ hr {
 
     25% {
        
-        top: 100px;
+        top: 25px;
     }
 
     50% {
    
-        top: 150px;
+        top: 50px;
     }
     100% {
         top: 0px;
