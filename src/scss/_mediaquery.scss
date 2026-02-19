@@ -11,8 +11,13 @@
    grid-template-columns: 1fr;
         flex-direction: column;
         padding: 1rem;
+        margin-top: 20px;
         overflow-x: hidden;
 }
+
+.bild-tomat img {
+    margin-top: 80px;
+  }
 
     .bananer,
     .element-tester {
@@ -50,7 +55,9 @@
         overflow-x: hidden;
     }
 .tomater {
-    @extend .arstider;
+    grid-template-columns: 1fr;
+        flex-direction: column;
+        padding: 1rem;
         overflow: hidden;
 }
 

@@ -57,7 +57,8 @@ main {
 .bild-span img,
 .bild-tomat img {
   display: block;
-  z-index: 2;
+  z-index: 200;
+  padding-top: 40px;
 }
 
 .tomater {
@@ -134,7 +135,6 @@ footer {
 }
 
 .click-btn:active {
-  content: "";
   background: rgb(0, 77, 0);
   color: white;
   display: block;
@@ -303,24 +303,24 @@ nav a:visited {
 }
 @keyframes move {
   0% {
-    left: -200px;
-    bottom: 100px;
+    left: -100px;
+    bottom: 50px;
   }
   25% {
-    left: 200px;
-    bottom: 100px;
+    left: 100px;
+    bottom: 50px;
   }
   50% {
     left: 0px;
-    bottom: 100px;
+    bottom: 50px;
   }
   75% {
     left: 0px;
     bottom: 0px;
   }
   100% {
-    left: -200px;
-    bottom: 100px;
+    left: -100px;
+    bottom: 50px;
   }
 }
 @keyframes moveshadow {
@@ -506,12 +506,21 @@ nav a:visited {
   }
 }
 @media (max-width: 600px) {
-  .arstider,
-  .tomater {
+  .arstider {
     grid-template-columns: 1fr;
     flex-direction: column;
     padding: 1rem;
     overflow-x: hidden;
+  }
+  .tomater {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 20px;
+    overflow-x: hidden;
+  }
+  .bild-tomat img {
+    margin-top: 80px;
   }
   .bananer,
   .element-tester {
@@ -536,12 +545,17 @@ nav a:visited {
   }
 }
 @media (max-width: 900px) {
-  .arstider,
-  .tomater {
+  .arstider {
     grid-template-columns: 1fr;
     flex-direction: column;
     padding: 1rem;
     overflow-x: hidden;
+  }
+  .tomater {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding: 1rem;
+    overflow: hidden;
   }
   .bananer,
   .element-tester {

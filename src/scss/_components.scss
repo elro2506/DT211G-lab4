@@ -62,7 +62,8 @@ main {
 .bild-span img,
 .bild-tomat img {
     display: block;
-    z-index: 2;
+    z-index: 200;
+    padding-top: 40px;
 }
 
 .tomater {
